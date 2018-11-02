@@ -1,3 +1,3 @@
 #Personal Website
 
-Based on the [Hydeout]https://github.com/fongandrew/hydeout)heme.
+Based on the [Hydeout](https://github.com/fongandrew/hydeout) theme.
