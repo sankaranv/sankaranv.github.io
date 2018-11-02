@@ -1,22 +1,36 @@
-<nav id="sidebar-icon-links">
-  {% if site.hydeout.repo %}
+<center>
+<nav style="list-style: none; margin: auto; width: 85%; justify-content: center;" id="sidebar-icon-links" id="sidebar-icon-links">
+  {% if site.github.repo %}
     <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
+       class="icon" title="Github" aria-label="Github"
+       href="{{ site.github.repo }}">
       {% include svg/github.svg %}
-    </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
-      {% include svg/download.svg %}
     </a>
   {% endif %}
 
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.baseurl }}/{{ site.feed.path | default: 'feed.xml' }}">
-    {% include svg/feed.svg %}
-  </a>
+  {% if site.linkedin %}
+    <a id="linkedin-link"
+       class="icon" title="linkedin" aria-label="Linkedin"
+       href="{{ site.linkedin }}">
+      {% include svg/linkedin.svg %}
+    </a>
+  {% endif %}
+
+    {% if site.scholar %}
+    <a id="scholar-link"
+       class="icon" title="scholar" aria-label="Google Scholar"
+       href="{{ site.scholar }}">
+      {% include svg/scholar.svg %}
+    </a>
+  {% endif %}
+
+  {% if site.twitter %}
+    <a id="twitter-link"
+       class="icon" title="Twitter" aria-label="Twitter"
+       href="{{ site.twitter }}">
+      {% include svg/twitter.svg %}
+    </a>
+  {% endif %}
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
@@ -51,3 +65,5 @@
 
   {% include custom-icon-links.html %}
 </nav>
+
+</center>

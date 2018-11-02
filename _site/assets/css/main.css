@@ -14,11 +14,11 @@ body {
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.6rem;
   line-height: 1.5; }
   @media (min-width: 49rem) {
     html {
-      font-size: 1.25rem; } }
+      font-size: 1.2rem; } }
 
 body {
   -webkit-text-size-adjust: 100%;
@@ -487,8 +487,8 @@ pre {
 */
 body {
   color: rgba(255, 255, 255, 0.75);
-  background-color: #202020;
-  background-image: linear-gradient(to bottom, #323232, #0e0e0e);
+  background-color: #00397a;
+  background-image: url("/images/sidebar.png"), linear-gradient(to bottom, #004a9e, #002856);
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -500,7 +500,7 @@ body {
   #sidebar .site-title {
     font-family: "Abril Fatface", serif;
     font-weight: normal;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 0.5rem; }
     #sidebar .site-title .back-arrow {
@@ -648,9 +648,6 @@ body {
   Set $sidebar-stick variable to affix sidebar contents to the
   bottom of the sidebar in tablets and up.
 ----------------------------------------------------------- */
-@media (min-width: 49rem) {
-  body {
-    align-items: flex-end; } }
 /* -----------------------------------------------------------
   Reverse layout
 
