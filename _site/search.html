@@ -11,7 +11,7 @@
 
   <title>
     
-      404: Page not found &middot; Sankaran Vaidyanathan
+      Google Search &middot; Sankaran Vaidyanathan
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="default">
+  <body class="search">
 
     <div id="sidebar">
 <style>
@@ -223,11 +223,26 @@ img {
 </div>
 
     <main class="container">
-      <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="">Head back home</a> to try finding it again.</p>
-</div>
+      <header>
+  <h1 class="page-title"><label for="search-bar">Google Search</label></h1>
+</header>
+<div class="content">
+  <form action="https://google.com/search" class="search-form">
+  <div class="search-row">
+    <input id="search-bar" type="search" name="q" />
 
+    
+    
+    
+    
+    
+    <input name="sitesearch" type="hidden"
+           value="localhost:4000" />
+
+    <input type="submit" value="Search" />
+  </div>
+</form>
+</div>
     </main>
 
     <!-- Optional footer content -->

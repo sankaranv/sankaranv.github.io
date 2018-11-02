@@ -7,7 +7,7 @@ I work at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/) a
 
 My research lies in the area of machine learning on graphs; my primary work is on hypergraph clustering with modularity and spectral methods. In the process, I was also fortunate to work in collaboration with [Prof. Srinivasan Parthasarathy](http://web.cse.ohio-state.edu/~parthasarathy.2/), The Ohio State University. I previously worked on end-to-end clustering with deep neural networks, and a little bit of reinforcement learning. I enjoy looking for inspiration from psychology, philosophy and the arts as well. 
 
-Prior to this, I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/). I was advised by [Prof. Ranganath Muthu](https://www.researchgate.net/profile/Ranganath_Muthu). Before that, I spent time writing theatrical plays and thinking about how to connect disparate elements with stories.
+Prior to this, I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/). Before that, I spent time writing theatrical plays and thinking about how to connect disparate elements with stories.
 
 ## Projects
 
