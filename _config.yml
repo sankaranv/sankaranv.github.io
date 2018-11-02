@@ -1,1 +1,23 @@
-remote_theme: fongandrew/hydeout
+remote_theme:     fongandrew/hydeout
+markdown:         kramdown
+highlighter:      rouge
+
+title:            Sankaran
+tagline:          Personal Webpage
+url:              https://sankaranv.github.io
+email:            sankaranv8@gmail.com
+author:
+  name:           'Sankaran Vaidyanathan'
+  url:            sankaranv.github.io
+paginate:         5
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  
+sidebar_home_link:  false
+twitter:            https://twitter.com/sankaranv8
+linkedin:           https://www.linkedin.com/in/sankaranv8/
+
+#include:            ['_pages']
+
