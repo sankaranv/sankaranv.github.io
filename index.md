@@ -16,7 +16,7 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
    <tr>
      <td valign="top" width="85%">
           <p>
-              <paper><b>A New Measure of Modularity on Hypergraphs: Theoretical Insights and Implications for Effective Clustering</b></paper>
+              <paper><b>Hypergraph Clustering: A Modularity Maximization Approach</b></paper>
               <br>
               Tarun Kumar*, 
               <b>Sankaran Vaidyanathan*</b>, 
@@ -29,7 +29,7 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
               <details>
                 <summary>Abstract</summary>            
                   <p class="message">
-                    Learning on graphs is a field of great interest due to the abundance of relational data from real-world systems. However, many such systems consist of entities that exhibit more complex group interactions rather than simple pairwise relationships; examples of these are co-authorship, co-citation and protein complex networks. Such super-dyadic relations are more suitably modeled using hypergraphs. Learning on hypergraphs has thus been garnering increased attention with potential applications in network analysis, VLSI design and computer vision, among others. Our primary contribution in this work is to generalize the framework of modularity maximization for clustering on hypergraphs. In doing this, we introduce a hypergraph null model that can be shown to correspond exactly to the configuration model for undirected graphs. We derive an adjacency matrix reduction that preserves the hypergraph node degree sequence, for use with this null model. The resultant modularity function may be maximized using the Louvain method, which is a popular fast algorithm known to work well in practice for graphs. We additionally propose a refinement over this clustering that exploits higher-order information within the hypergraph. This works by iteratively reweighting cut hyperedges, based on the proportion of their nodes in different communities. We demonstrate both the efficacy and efficiency of our methods on several real-world datasets.
+                    Clustering on hypergraphs has been garnering increased attention with potential applications in network analysis, VLSI design and computer vision, among others. In this work, we generalize the framework of modularity maximization for clustering on hypergraphs. To this end, we introduce a hypergraph null model, analogous to the configuration model on undirected graphs, and a node-degree preserving reduction to work with this model. This is used to define a modularity function that can be maximized using the popular and fast Louvain algorithm. We additionally propose a refinement over this clustering, by reweighting cut hyperedges in an iterative fashion. The efficacy and efficiency of our methods are demonstrated on several real-world datasets.
                   </p>
               </details>
           </p>  
