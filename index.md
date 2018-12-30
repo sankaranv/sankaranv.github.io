@@ -44,4 +44,4 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
 
 ## Lab talks
 
-- **A Tour of Spectral Clustering and the Graph Laplacian**, *Networks Reading Group, RISE Lab, IIT Madras*
+- **A Tour of Spectral Clustering and the Graph Laplacian**, *Networks Reading Group, RISE Lab, IIT Madras*, lecture notes coming soon!
