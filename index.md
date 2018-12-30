@@ -44,4 +44,4 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
 ## Courses
 
 - [CS 7015: Deep Learning](https://www.cse.iitm.ac.in/~miteshk/CS7015.html)
-- [CS 6730: Probabilistic Graphical Models](https://sites.google.com/site/harishguruprasad/teaching/cs6730pgm
+- [CS 6730: Probabilistic Graphical Models](https://sites.google.com/site/harishguruprasad/teaching/cs6730pgm)
