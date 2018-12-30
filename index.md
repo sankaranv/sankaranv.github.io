@@ -37,11 +37,11 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
    </tr>
 </table>
 
-## Courses
-
-- [CS 7015: Deep Learning](https://www.cse.iitm.ac.in/~miteshk/CS7015.html)
-- [CS 6730: Probabilistic Graphical Models](https://sites.google.com/site/harishguruprasad/teaching/cs6730pgm)
-
 ## Lab talks
 
 - **A Tour of Spectral Clustering and the Graph Laplacian**, *Networks Reading Group, RISE Lab, IIT Madras*, lecture notes coming soon!
+
+## Courses
+
+- [CS 7015: Deep Learning](https://www.cse.iitm.ac.in/~miteshk/CS7015.html)
+- [CS 6730: Probabilistic Graphical Models](https://sites.google.com/site/harishguruprasad/teaching/cs6730pgm
