@@ -24,7 +24,7 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
               <a href='http://web.cse.ohio-state.edu/~parthasarathy.2/'>Srinivasan Parthasarathy</a>, 
               <a href='https://www.cse.iitm.ac.in/~ravi/'>Balaraman Ravindran</a>
               <br>
-              <i>(under review, preprint coming soon!)</i>
+              <i><a href="https://arxiv.org/abs/1812.10869">arXiv</a></i>
               <!-- [<a href="">Arxiv</a>, <a href="">Code</a>] -->
               <details>
                 <summary>Abstract</summary>            
