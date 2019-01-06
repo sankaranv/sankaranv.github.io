@@ -23,7 +23,7 @@ paginate:         1
                     # Or '/blog/page:num' if you want to move your index pages
 
 email:              sankaranv8@gmail.com
-scholar:            https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en
+#scholar:            https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en
 github:
   repo:             https://github.com/sankaranv
 twitter:            https://twitter.com/sankaranv8
