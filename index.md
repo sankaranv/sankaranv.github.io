@@ -10,7 +10,7 @@ My research lies in the area of machine learning on graphs; my primary work is o
 
 Prior to this, I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/). Before that, I spent time writing theatrical plays and thinking about how to connect disparate elements with stories.
 
-## Projects
+## Publications
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
    <tr>
