@@ -24,7 +24,7 @@ Prior to this, I graduated with a B.E in Electrical and Electronics Engineering 
               <a href='http://web.cse.ohio-state.edu/~parthasarathy.2/'>Srinivasan Parthasarathy</a>, 
               <a href='https://www.cse.iitm.ac.in/~ravi/'>Balaraman Ravindran</a>
               <br>
-              The 8th International Conference on Complex Networks and their Applications (<i>Complex Networks 2019</i>)
+              8th International Conference on Complex Networks and their Applications (<i>Complex Networks 2019</i>)
               <!-- [<a href="">Arxiv</a>, <a href="">Code</a>] -->
               <details>
                 <summary>Abstract | <a href="https://arxiv.org/abs/1812.10869">arXiv</a></summary>            
