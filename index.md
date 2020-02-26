@@ -4,7 +4,7 @@ title: Main Page
 sidebar_link: false
 ---
 
-I am a first-year MS student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I currently work with the [Knowledge Discovery Lab](https://groups.cs.umass.edu/kdl/). My primary interests are in (a) building explainable machine learning models and (b) explaining existing machine learning models. My research lies at the intersection of Machine Learning, Causal Inference and Network Science.
+I am a first-year MS student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I currently work with the [Knowledge Discovery Lab](https://groups.cs.umass.edu/kdl/). My primary interests are in (a) building explainable machine learning models and (b) explanations for existing machine learning models. My research lies at the intersection of Machine Learning, Causal Inference and Network Science.
 
 Before coming to UMass, I worked at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/) as a Project Associate, where I was fortunate to be advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I was associated with the [Robert Bosch Centre for Data Science and Artificial Intelligence](https://rbc-dsai.iitm.ac.in/) and the [RISE-IIL Lab](https://rise-iil.github.io). My primary work was on hypergraph clustering with modularity and spectral methods. In the process, I was also fortunate to work in collaboration with [Prof. Srinivasan Parthasarathy](http://web.cse.ohio-state.edu/~parthasarathy.2/), The Ohio State University.
 
