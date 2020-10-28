@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Sankaran Vaidyanathan
 tagline:          'Personal Webpage'
-description:      'sankaranv8@gmail.com'
+description:      'svaidyanatha@umass.edu'
 url:              https://sankaranv.github.io
 #baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ paginate:         1
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
-email:              svaidyanatha@cs.umass.edu
+email:              svaidyanatha@umass.edu
 scholar:            https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en
 github:
   repo:             https://github.com/sankaranv
