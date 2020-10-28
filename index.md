@@ -4,7 +4,7 @@ title: Main Page
 sidebar_link: false
 ---
 
-I am a second-year MS student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). I am broadly interested in using causal inference methods to build machine learning models that generalize to novel environments and afford explainability. My current research focuses on representation learning for causal modeling.
+I am a second-year MS student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). In particular, I am interested in using causal inference methods to build machine learning models that generalize to novel environments and afford explainability. My current research focuses on learning variable definitions for causal modeling that can represent modular and independent mechanisms.
 
 Before coming to UMass, I worked at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/).
 
