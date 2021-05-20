@@ -4,11 +4,11 @@ title: Main Page
 sidebar_link: false
 ---
 
-I am a second-year MS student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). I am interested in using causal inference methods to build machine learning models that generalize to novel environments and afford explainability. My current research focuses on learning representations for causal modeling that exhibit modularity and independence of mechanism.
+I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My broad interests lie in the span of causal inference, reinforcement learning and probabilistic machine learning. My current research involves building causal models for reinforcement learning domains that can generalize under changes in the environment, and competence-aware models that can anticipate the effects of such changes.
 
-Before coming to UMass, I worked at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/).
+<!-- Before coming to UMass, I worked at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/). -->
 
-## Publications
+<!-- ## Publications
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
    <tr>
@@ -33,4 +33,4 @@ Before coming to UMass, I worked at the [Indian Institute of Technology Madras](
           </p>  
      </td>
    </tr>
-</table>
+</table> -->
