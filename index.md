@@ -23,7 +23,7 @@ I am a PhD student at the [College of Information and Computer Sciences, UMass A
               <a href='https://www.cse.iitm.ac.in/~ravi/'>Balaraman Ravindran</a>
               <br>
               8th International Conference on Complex Networks and their Applications (<i>Complex Networks 2019</i>)
-              <!-- [<a href="">Arxiv</a>, <a href="">Code</a>] -->
+              [<a href="">Arxiv</a>, <a href="">Code</a>]
               <details>
                 <summary>Abstract | <a href="https://arxiv.org/abs/1812.10869">arXiv</a></summary>            
                   <p class="message">
