@@ -22,7 +22,7 @@ paginate:         1
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
-email:              svaidyanatha@umass.edu
+email:              sankaranv@cs.umass.edu
 scholar:            https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en
 github:
   repo:             https://github.com/sankaranv
