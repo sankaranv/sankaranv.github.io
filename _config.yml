@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Sankaran Vaidyanathan
 tagline:          'Personal Webpage'
-description:      'sankaranv@cs.umass.edu'
+description:      'sankaranv [at] cs [dot] umass [dot] edu'
 url:              https://sankaranv.github.io
 #baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
