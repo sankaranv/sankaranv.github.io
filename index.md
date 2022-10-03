@@ -4,7 +4,7 @@ title: Main Page
 sidebar_link: false
 ---
 
-I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research interests are in causal inference and causal modeling in AI, and their intersections with probabilistic machine learning and reinforcement learning. I am currently working on causal models for reinforcement learning domains that can generalize under changes in the environment, and competence-aware models that can anticipate the effects of such changes.
+I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research aims to infer causal mechanisms that underlie the behavior of complex autonomous agents. This goal is driven by a strong desire to develop _social understanding_ with AI agents as they continue to be integrated into society. To this end, my research interests span the areas of causal inference, probabilistic machine learning, and human-computer interaction. I am currently working on causal models for measuring competence in black-box reinforcement learning agents under interventions in the environment.
 
 Before coming to UMass, I worked on clustering algorithms for large hypergraphs at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/).
 
