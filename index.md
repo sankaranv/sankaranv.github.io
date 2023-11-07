@@ -4,7 +4,7 @@ title: Main Page
 sidebar_link: false
 ---
 
-I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research aims to create tools for empirically analyzing and evaluating the behaviours of complex AI systems, as they continue to be integrated into society. To this end, my research interests span the areas of causal inference and probabilistic machine learning.
+I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research aims to create tools for analyzing the behaviour of complex AI systems, with a focus on problems in explanation, blame attribution, and safety evaluation. To this end, my research interests span the areas of causal inference, reinforcement learning and probabilistic machine learning.
 
 Before coming to UMass, I worked on clustering algorithms for large hypergraphs at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/).
 
