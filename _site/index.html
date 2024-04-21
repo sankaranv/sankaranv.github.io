@@ -32,6 +32,37 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
   <!-- Additional head bits without overriding original head -->
+
+    <!-- Mathjax Support -->
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    // displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  // Autonumbering by mathjax
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
 </head>
 
 
@@ -52,7 +83,7 @@ img {
         <font size="+2"> Sankaran Vaidyanathan </font>
       </a>
     </h1>
-    <p class="lead">[firstname]v[at]cs.umass.edu</p>
+    <p class="lead">sankaranv[at]cs.umass.edu</p>
   </header>
 
   <br>
@@ -74,35 +105,11 @@ img {
 
 
   
-    
-  
 
   
     
   
 
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  
-
-
-  
-    
   
 
   
@@ -123,6 +130,42 @@ img {
     
   
 
+  
+    
+  
+
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
   
 
 
@@ -218,9 +261,9 @@ paper {
 
 </style>
 
-<p>I am a PhD student at the <a href="https://www.cics.umass.edu/">College of Information and Computer Sciences, UMass Amherst</a>, where I am advised by <a href="https://people.cs.umass.edu/~jensen/">David Jensen</a>. My research aims to create tools for analyzing the behaviour of complex AI systems, with a focus on problems in explanation, blame attribution, and safety evaluation. To this end, my research interests span the areas of causal inference, reinforcement learning and probabilistic machine learning.</p>
+<p>I am a PhD student at the <a href="https://www.cics.umass.edu/">College of Information and Computer Sciences, UMass Amherst</a>, where I am advised by <a href="https://people.cs.umass.edu/~jensen/">David Jensen</a>. My research spans the areas of causal inference, probabilistic machine learning, and reinforcement learning. More recently, I have also worked on approaches for mechanistic interpretability in LLMs.</p>
 
-<p>Before coming to UMass, I worked on clustering algorithms for large hypergraphs at the <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>, where I was advised by <a href="https://www.cse.iitm.ac.in/~ravi/">Prof. Balaraman Ravindran</a>. I graduated with a B.E in Electrical and Electronics Engineering from <a href="http://www.ssn.edu.in/">SSN College of Engineering</a>, affliated to <a href="https://www.annauniv.edu/">Anna University</a>.</p>
+<p>I aim to create tools for analyzing and evaluating the behaviour of complex AI systems, with a focus on problems in blame and responsibility attribution, explainability, and alignment with human norms. Unlike most applications of causal inference that involve objective experimentation and interaction with the external world, these issues are traditionally grounded in subjective human judgments. These involve <b>norms</b> that can be very counterintuitive, and pose a significant challenge to purely statistical approaches in causal inference. By developing formal approaches for modeling norms and inference algorithms that align with norms, I hope to support open and scientific evaluation and auditing of AI systems, and the growth of AI systems that better align with norms.</p>
 
 <p>My publications can be found on <a href="https://scholar.google.com/citations?user=DbeHYRcAAAAJ&amp;hl=en&amp;oi=sra">Google Scholar</a>.</p>
 <h2 id="research">Research</h2>
@@ -245,7 +288,7 @@ paper {
                 <br />
        <i>In preparation</i> | <a href="https://arxiv.org/pdf/2404.10883.pdf">arXiv</a>
        <br /><br />
-       Classical definitions of actual causation often declare a large number of events and entities in an environment to be causes, even when many of them rarely influence the outcome. This is an issue of <i>normality</i>, or the distinction between normal and rare events as potential causes. By exploiting <i>context-specific independencies</i> in the environment, we can prune out events that do not affect the outcome in the observed context and identify a restricted and focused set of actual causes. We accordingly extend the formal definition of actual causation and show how to automatically infer actual causes under this definition.
+       Classical definitions of actual causation often declare a large number of events and entities in an environment to be causes, even when many of them rarely influence the outcome. This is an issue of <i>normality</i>, or the distinction between normal and rare events as potential causes. By exploiting <i>context-specific independencies</i> in the environment, we can prune out events that do not affect the outcome in the observed context and identify a restricted and focused set of actual causes. We extend the formal definition of actual causation to account for these independencies, and show how to automatically infer actual causes under this definition.
           </p>  
      </td>
    </tr>

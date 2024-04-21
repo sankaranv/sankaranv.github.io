@@ -36,9 +36,11 @@ paper {
 
 </style>
 
-I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research aims to create tools for analyzing the behaviour of complex AI systems, with a focus on problems in explanation, blame attribution, and safety evaluation. To this end, my research interests span the areas of causal inference, reinforcement learning and probabilistic machine learning.
+I am a PhD student at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research spans the areas of causal inference, probabilistic machine learning, and reinforcement learning. More recently, I have also worked on approaches for mechanistic interpretability in LLMs.
 
-Before coming to UMass, I worked on clustering algorithms for large hypergraphs at the [Indian Institute of Technology Madras](https://www.iitm.ac.in/), where I was advised by [Prof. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). I graduated with a B.E in Electrical and Electronics Engineering from [SSN College of Engineering](http://www.ssn.edu.in/), affliated to [Anna University](https://www.annauniv.edu/).
+I aim to create tools for analyzing and evaluating the behaviour of complex AI systems, with a focus on problems in blame and responsibility attribution, explainability, and alignment with human norms. Unlike most applications of causal inference that involve objective experimentation and interaction with the external world, these issues are traditionally grounded in subjective human judgments. These involve <b>norms</b> that can be very counterintuitive, and pose a significant challenge to purely statistical approaches in causal inference. By developing formal approaches for modeling norms and inference algorithms that align with norms, I hope to support open and scientific evaluation and auditing of AI systems, and the growth of AI systems that better align with norms. 
+
+
 
 My publications can be found on [Google Scholar](https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en&oi=sra).
 ## Research
@@ -63,7 +65,7 @@ My publications can be found on [Google Scholar](https://scholar.google.com/cita
                 <br>
        <i>In preparation</i> | <a href='https://arxiv.org/pdf/2404.10883.pdf'>arXiv</a>
        <br><br>
-       Classical definitions of actual causation often declare a large number of events and entities in an environment to be causes, even when many of them rarely influence the outcome. This is an issue of <i>normality</i>, or the distinction between normal and rare events as potential causes. By exploiting <i>context-specific independencies</i> in the environment, we can prune out events that do not affect the outcome in the observed context and identify a restricted and focused set of actual causes. We accordingly extend the formal definition of actual causation and show how to automatically infer actual causes under this definition.
+       Classical definitions of actual causation often declare a large number of events and entities in an environment to be causes, even when many of them rarely influence the outcome. This is an issue of <i>normality</i>, or the distinction between normal and rare events as potential causes. By exploiting <i>context-specific independencies</i> in the environment, we can prune out events that do not affect the outcome in the observed context and identify a restricted and focused set of actual causes. We extend the formal definition of actual causation to account for these independencies, and show how to automatically infer actual causes under this definition.
           </p>  
      </td>
    </tr>

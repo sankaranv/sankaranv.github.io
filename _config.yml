@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Sankaran Vaidyanathan
 tagline:          'Personal Webpage'
-description:      '[firstname]v[at]cs.umass.edu'
+description:      'sankaranv[at]cs.umass.edu'
 url:              https://sankaranv.github.io
 #baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
@@ -18,9 +18,15 @@ author:
   name:           'Sankaran Vaidyanathan'
   url:            https://sankaranv.github.io
 
-paginate:         5git add ./*
-paginate_path:    '/page:num'
+paginate:         5
+paginate_path:    '/blog/page:num'
 #                     Or '/blog/page:num' if you want to move your index pages
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
 email:              sankaranv@cs.umass.edu
 scholar:            https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en
@@ -29,13 +35,14 @@ github:
 twitter:            https://twitter.com/sankaranv8
 linkedin:           https://www.linkedin.com/in/sankaranv8/
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
+
 # Include all files under '_pages' as files in root directory
 include: ['_pages']
-
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
 
 # Sidebar link settings
 sidebar_home_link:  true
@@ -43,4 +50,4 @@ sidebar_blog_link:  '/blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
-sidebar_about_link: '/about.html'
+sidebar_about_link: '/index.html'
