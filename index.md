@@ -40,16 +40,15 @@ I am a PhD student at the [College of Information and Computer Sciences, UMass A
 
 I aim to create tools for analyzing and evaluating the behaviour of complex AI systems, with a focus on problems in blame and responsibility attribution, explainability, and alignment with human norms. Unlike most applications of causal inference that involve objective experimentation and interaction with the external world, these issues are traditionally grounded in subjective human judgments. These involve <b>norms</b> that can be very counterintuitive, and pose a significant challenge to purely statistical approaches in causal inference. By developing formal approaches for modeling norms and inference algorithms that align with norms, I hope to support open and scientific evaluation and auditing of AI systems, and the growth of AI systems that better align with norms. 
 
+For a complete list of my publications, see my [Google Scholar](https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en&oi=sra).
 
-
-My publications can be found on [Google Scholar](https://scholar.google.com/citations?user=DbeHYRcAAAAJ&hl=en&oi=sra).
 ## Research
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
 
 <tr>
-       <td width="16%"  valign="top">
+       <td width="20%"  valign="top">
             <img src="/images/projects/IVP.png" alt="lean" style="vertical-align:center; horiz-align:left; width: 100%; margin:0px 0px; border-radius:0%"/> 
      </td>
      <td valign="top" width="65%">
