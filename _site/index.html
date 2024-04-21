@@ -52,17 +52,19 @@ img {
         <font size="+2"> Sankaran Vaidyanathan </font>
       </a>
     </h1>
-    <p class="lead">sankaranv8@gmail.com</p>
+    <p class="lead">[firstname]v[at]cs.umass.edu</p>
   </header>
-
-  <a href="/files/Sankaran_CV.pdf">
-    Curriculum Vitae
-  </a>
 
   <br>
 
   <nav id="sidebar-nav-links">
   
+    <a class="home-link  active"
+        href="/">Home</a>
+  
+  
+    <a class="page-link "
+	href="/blog">Blog</a>
   
 
 
@@ -128,6 +130,10 @@ img {
 </nav>
 
 
+  <a href="/files/Sankaran_CV.pdf">
+    Curriculum Vitae
+  </a>
+
   
 
   <link rel="stylesheet" href="/assets/css/academicons.min.css"/>
@@ -174,56 +180,77 @@ img {
 </center>
 </div>
 
+
     <main class="container">
       <div class="content">
   
 
 
-  <p>I work at the <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a> as a Project Associate, and am fortunate to be advised by <a href="https://www.cse.iitm.ac.in/~ravi/">Prof. Balaraman Ravindran</a>. I am associated with the <a href="https://rbc-dsai.iitm.ac.in/">Robert Bosch Centre for Data Science and Artificial Intelligence</a> and the <a href="https://rise-iil.github.io">RISE-IIL Lab</a>.</p>
+  <style>
 
-<p>My research lies in the area of machine learning on graphs; my primary work is on hypergraph clustering with modularity and spectral methods. In the process, I was also fortunate to work in collaboration with <a href="http://web.cse.ohio-state.edu/~parthasarathy.2/">Prof. Srinivasan Parthasarathy</a>, The Ohio State University. I previously worked on end-to-end clustering with deep neural networks. I enjoy looking for inspiration from psychology, philosophy and the arts as well.</p>
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 80%;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-collapse: collapse;
+}
 
-<p>Prior to this, I graduated with a B.E in Electrical and Electronics Engineering from <a href="http://www.ssn.edu.in/">SSN College of Engineering</a>, affliated to <a href="https://www.annauniv.edu/">Anna University</a>. Before that, I spent time writing theatrical plays and thinking about how to connect disparate elements with stories.</p>
+td,
+th {
+  padding: 1rem .25rem;
+  border: 0px solid $border-color;
+}
 
-<h2 id="publications">Publications</h2>
+th {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: transparent;
+}
+
+paper {
+ color: #; 
+ font-weight:bold;
+}
+
+</style>
+
+<p>I am a PhD student at the <a href="https://www.cics.umass.edu/">College of Information and Computer Sciences, UMass Amherst</a>, where I am advised by <a href="https://people.cs.umass.edu/~jensen/">David Jensen</a>. My research aims to create tools for analyzing the behaviour of complex AI systems, with a focus on problems in explanation, blame attribution, and safety evaluation. To this end, my research interests span the areas of causal inference, reinforcement learning and probabilistic machine learning.</p>
+
+<p>Before coming to UMass, I worked on clustering algorithms for large hypergraphs at the <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>, where I was advised by <a href="https://www.cse.iitm.ac.in/~ravi/">Prof. Balaraman Ravindran</a>. I graduated with a B.E in Electrical and Electronics Engineering from <a href="http://www.ssn.edu.in/">SSN College of Engineering</a>, affliated to <a href="https://www.annauniv.edu/">Anna University</a>.</p>
+
+<p>My publications can be found on <a href="https://scholar.google.com/citations?user=DbeHYRcAAAAJ&amp;hl=en&amp;oi=sra">Google Scholar</a>.</p>
+<h2 id="research">Research</h2>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-   <tr>
-     <td valign="top" width="85%">
+
+
+<tr>
+       <td width="16%" valign="top">
+            <img src="/images/projects/IVP.png" alt="lean" style="vertical-align:center; horiz-align:left; width: 100%; margin:0px 0px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="65%">
           <p>
-              <paper><b>Hypergraph Clustering: A Modularity Maximization Approach</b></paper>
-              <br />
-              Tarun Kumar*, 
-              <b>Sankaran Vaidyanathan*</b>, 
-              <a href="https://www.linkedin.com/in/harinianantha/">Harini Ananthapadmanabhan</a>,  
-              <a href="http://web.cse.ohio-state.edu/~parthasarathy.2/">Srinivasan Parthasarathy</a>, 
-              <a href="https://www.cse.iitm.ac.in/~ravi/">Balaraman Ravindran</a>
-              <br />
-              <i>(under review)</i>
-              <!-- [<a href="">Arxiv</a>, <a href="">Code</a>] -->
-              <details>
-                <summary>Abstract | <a href="https://arxiv.org/abs/1812.10869">arXiv</a></summary>            
-                  <p class="message">
-                    Clustering on hypergraphs has been garnering increased attention with potential applications in network analysis, VLSI design and computer vision, among others. In this work, we generalize the framework of modularity maximization for clustering on hypergraphs. To this end, we introduce a hypergraph null model, analogous to the configuration model on undirected graphs, and a node-degree preserving reduction to work with this model. This is used to define a modularity function that can be maximized using the popular and fast Louvain algorithm. We additionally propose a refinement over this clustering, by reweighting cut hyperedges in an iterative fashion. The efficacy and efficiency of our methods are demonstrated on several real-world datasets.
-                  </p>
-              </details>
+              <paper>Automated Discovery of Functional Actual Causes in Complex Environments</paper>
+                <br />
+                <a href="http://calcharles.github.io/">Caleb Chuck<sup>*</sup></a>,
+                <b>Sankaran Vaidyanathan<sup>*</sup></b>,    
+                <a href="https://sgiguerecs.com/">Stephen Giguere</a>,
+                <a href="https://amyzhang.github.io/">Amy Zhang</a>,
+                <a href="https://people.cs.umass.edu/~jensen/">David Jensen</a>,
+                <a href="https://people.cs.umass.edu/~sniekum/">Scott Niekum</a>
+                <br />
+       <i>In preparation</i> | <a href="https://arxiv.org/pdf/2404.10883.pdf">arXiv</a>
+       <br /><br />
+       Classical definitions of actual causation often declare a large number of events and entities in an environment to be causes, even when many of them rarely influence the outcome. This is an issue of <i>normality</i>, or the distinction between normal and rare events as potential causes. By exploiting <i>context-specific independencies</i> in the environment, we can prune out events that do not affect the outcome in the observed context and identify a restricted and focused set of actual causes. We accordingly extend the formal definition of actual causation and show how to automatically infer actual causes under this definition.
           </p>  
      </td>
    </tr>
+
 </table>
-
-<h2 id="lab-talks">Lab talks</h2>
-
-<ul>
-  <li><strong>A Tour of Spectral Clustering and the Graph Laplacian</strong>, <em>Networks Reading Group, RISE Lab, IIT Madras</em>, lecture notes coming soon!</li>
-</ul>
-
-<h2 id="courses">Courses</h2>
-
-<ul>
-  <li><a href="https://www.cse.iitm.ac.in/~miteshk/CS7015.html">CS 7015: Deep Learning</a></li>
-  <li><a href="https://sites.google.com/site/harishguruprasad/teaching/cs6730pgm">CS 6730: Probabilistic Graphical Models</a></li>
-</ul>
 
 
   
