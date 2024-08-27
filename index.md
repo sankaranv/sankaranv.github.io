@@ -89,9 +89,8 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
 🌟 Only GPT-4 Turbo and Llama3-70B shine among all the judge models we evaluate, but their alignment with human annotations still falls short of inter-human annotator agreement.<br>
 📊 Scores assigned by judges with >80% percent human alignment can be ~20 points apart, and Cohen's kappa is a superior metric.<br>
 ⚖️ Most aligned in scores != most discriminative, in some cases, judge models with low alignment such as Contains (lexical match), and JudgeLM-7B outperform better models in terms of <i>ranking</i> models, because their biases are more systematic.<br>
-🧩 𝗟𝗲𝗻𝗶𝗲𝗻𝗰𝘆: Judge LLMs tend to be more lenient than strict.<br>
-🎭 𝗩𝘂𝗹𝗻𝗲𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆: Judge LLMs can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know".<br>
-🎯 𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆: It's not easy to steer large models while smaller models get confused by adding too much detail.
+🧩 Judge LLMs are often lenient and can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know".<br>
+🎯 It is not easy to steer large models, but smaller models get confused by adding too much detail.
       </p>
      </td>
    </tr>
