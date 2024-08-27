@@ -93,8 +93,8 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
 🧩 𝗟𝗲𝗻𝗶𝗲𝗻𝗰𝘆: Judge LLMs tend to be more lenient than strict.<br>
 🎭 𝗩𝘂𝗹𝗻𝗲𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆: Judge LLMs can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know".<br>
 🎯 𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆: It's not easy to steer large models while smaller models get confused by adding too much detail.<br>
-
 With these results, we urge caution in trusting LLMs as judges without including an evaluation of the judges themselves. 
+
      </td>
    </tr>
 
