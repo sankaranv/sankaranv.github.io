@@ -71,7 +71,7 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
 
 <tr>
        <td width="20%"  valign="top">
-            <img src="/images/projects/IVP.png" alt="lean" style="vertical-align:center; horiz-align:left; width: 100%; margin:0px 0px; border-radius:0%"/> 
+            <img src="/images/projects/judge.png" alt="lean" style="vertical-align:center; horiz-align:left; width: 100%; margin:0px 0px; border-radius:0%"/> 
      </td>
      <td valign="top" width="65%">
           <p>
@@ -85,7 +85,7 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
                 <br>
        <i>In preparation</i> | <a href='https://arxiv.org/abs/2406.12624'>arXiv</a>
        <br><br>
-       Large language models are often evaluated using the LLM-as-a-judge paradigm, but there are still many open questions about the evaluation paradigm itself. We evaluate various LLMs acting as judges using human annotations for the TriviaQA benchmark, which we found to have a high inter-annotator agreement. We find that simply assessing percent agreement with human evaluations may be misleading; for example, judges with high percent agreement can still assign vastly different Cohen's kappa scores. Moreover, larger and high-performing models can give very different results when used to compare and <i>rank</i> different models, sometimes even being beaten by simpler models with far lower human alignment scores. We urge caution in trusting LLMs as judges without including an evaluation of the judges themselves.
+       Large language models are often evaluated using the LLM-as-a-judge paradigm, but there are still many open questions about the evaluation paradigm itself. We evaluate various LLMs acting as judges using human annotations for the TriviaQA benchmark, which we found to have a high inter-annotator agreement. We find that simply assessing percent agreement with human evaluations may be misleading; for example, judges with high percent agreement can still assign vastly different Cohen's kappa scores. Moreover, larger and high-performing models may not be as good at comparing and <i>ranking</i> different models, sometimes even being beaten by simpler models with far lower human alignment scores. We urge caution in trusting LLMs as judges without including an evaluation of the judges themselves.
      </td>
    </tr>
 
