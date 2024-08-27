@@ -86,12 +86,18 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
        <i>In preparation</i> | <a href='https://arxiv.org/abs/2406.12624'>arXiv</a>
        <br><br>
        Large language models are often evaluated using the <i>LLM-as-a-judge paradigm</i>, but there are still many open questions about the evaluation paradigm itself. We evaluate various LLMs acting as judges using human annotations for the TriviaQA benchmark, which we found to have a high inter-annotator agreement. 
+            
 🌟 𝗧𝗼𝗽 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗲𝗿𝘀: Only 𝗚𝗣𝗧-𝟰 and 𝗟𝗟𝗮𝗺𝗮-𝟯 𝟳𝟬𝗕 shine among 9 judge models. However, they still fall short of inter-human annotator agreement.
+
 📊 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗠𝗲𝘁𝗿𝗶𝗰: Scores assigned by judges with 80%+ percent alignment with humans can be 20 points apart! Cohen's kappa is a superior metric. 
+
 ⚖️ 𝗥𝗮𝗻𝗸𝗶𝗻𝗴 𝘃𝘀 𝘀𝗰𝗼𝗿𝗶𝗻𝗴: Most aligned in scores != most discriminative, in some cases, judge models with low alignment such as Contains (lexical match), and JudgeLM-7B outperform better models in terms of 𝑟𝑎𝑛𝑘𝑖𝑛𝑔 models, because their biases are more systematic.
 🧩 𝗟𝗲𝗻𝗶𝗲𝗻𝗰𝘆: Judge LLMs tend to be more lenient than strict.
+
 🎭 𝗩𝘂𝗹𝗻𝗲𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆: Judge LLMs can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know."
+
 🎯 𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆: It's not easy to steer large models while smaller models get confused by adding too much detail. 
+
 With these results, we urge caution in trusting LLMs as judges without including an evaluation of the judges themselves.
      </td>
    </tr>
