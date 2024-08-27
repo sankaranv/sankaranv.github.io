@@ -55,8 +55,8 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
           <p>
               <paper>Automated Discovery of Functional Actual Causes in Complex Environments</paper>
                 <br>
-                <a href='http://calcharles.github.io/'>Caleb Chuck<sup>*</sup></a>,
-                <b>Sankaran Vaidyanathan<sup>*</sup></b>,    
+                <a href='http://calcharles.github.io/'>Caleb Chuck*</a>,
+                <b>Sankaran Vaidyanathan*</b>,    
                 <a href='https://sgiguerecs.com/'>Stephen Giguere</a>,
                 <a href='https://amyzhang.github.io/'>Amy Zhang</a>,
                 <a href='https://people.cs.umass.edu/~jensen/'>David Jensen</a>,
@@ -77,9 +77,9 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
           <p>
               <paper>Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges</paper>
                 <br>
-                <a href='https://www.linkedin.com/in/singh96aman/'>Aman Singh Thakur<sup>*</sup></a>,
-                <a href='https://www.mlbykartik.com/'>Kartik Choudhary<sup>*</sup></a>,
-                <a href='https://www.linkedin.com/in/venkat-srinik-ramayapally-18565a170/'>Venkat Srinik Ramayapally<sup>*</sup></a>,
+                <a href='https://www.linkedin.com/in/singh96aman/'>Aman Singh Thakur*</a>,
+                <a href='https://www.mlbykartik.com/'>Kartik Choudhary*</a>,
+                <a href='https://www.linkedin.com/in/venkat-srinik-ramayapally-18565a170/'>Venkat Srinik Ramayapally*</a>,
                 <b>Sankaran Vaidyanathan</b>,    
                 <a href='https://dieuwkehupkes.nl/'>Dieuwke Hupkes</a>,
                 <br>
