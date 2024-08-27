@@ -92,6 +92,7 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
 📊 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗠𝗲𝘁𝗿𝗶𝗰: Scores assigned by judges with 80%+ percent alignment with humans can be 20 points apart! Cohen's kappa is a superior metric. 
 
 ⚖️ 𝗥𝗮𝗻𝗸𝗶𝗻𝗴 𝘃𝘀 𝘀𝗰𝗼𝗿𝗶𝗻𝗴: Most aligned in scores != most discriminative, in some cases, judge models with low alignment such as Contains (lexical match), and JudgeLM-7B outperform better models in terms of 𝑟𝑎𝑛𝑘𝑖𝑛𝑔 models, because their biases are more systematic.
+
 🧩 𝗟𝗲𝗻𝗶𝗲𝗻𝗰𝘆: Judge LLMs tend to be more lenient than strict.
 
 🎭 𝗩𝘂𝗹𝗻𝗲𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆: Judge LLMs can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know."
