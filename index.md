@@ -77,13 +77,13 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
           <p>
               <paper>Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges</paper>
                 <br>
-                <a href='https://www.linkedin.com/in/singh96aman'>Aman Singh Thakur<sup>*</sup></a>,
+                <a href='https://www.linkedin.com/in/singh96aman/'>Aman Singh Thakur<sup>*</sup></a>,
                 <a href='https://www.mlbykartik.com/'>Kartik Choudhary<sup>*</sup></a>,
                 <a href='https://www.linkedin.com/in/venkat-srinik-ramayapally-18565a170/'>Venkat Srinik Ramayapally<sup>*</sup></a>,
                 <b>Sankaran Vaidyanathan</b>,    
                 <a href='https://dieuwkehupkes.nl/'>Dieuwke Hupkes</a>,
                 <br>
-       <i>In preparation</i> | <a href='https://arxiv.org/pdf/2404.10883.pdf'>arXiv</a>
+       <i>In preparation</i> | <a href='https://arxiv.org/abs/2406.12624'>arXiv</a>
        <br><br>
        The LLM-as-a-judge paradigm is rapidly gaining traction as an approach to evaluating large language models (LLMs), but there are still many open questions about the strengths, weaknesses, and potential biases of this paradigm. We present a comprehensive study of the performance of various LLMs acting as judges, evaluating them alongside human annotations for the TriviaQA benchmark which we found to have a high inter-annotator agreement. We find that judges with high percent agreement can still assign vastly different Cohen's kappa scores, and simply assessing percent agreement may be misleading. Additionally, we find that while very large models like Llama-3 70B and GPT-4 Turbo have an excellent alignment with humans, they can give very different results when used to compare and rank different models, sometimes even being beaten by simple models with far lower human alignment scores such as JudgeLM-7B and the lexical judge Contains. With this work, we hope to provide valuable lessons for using LLMs as judges in the future. 
           </p>  
