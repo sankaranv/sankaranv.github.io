@@ -85,12 +85,7 @@ For a complete list of my publications, see my [Google Scholar](https://scholar.
                 <br>
        <i>In preparation</i> | <a href='https://arxiv.org/abs/2406.12624'>arXiv</a>
        <br><br>
-       Large language models are often evaluated using the <i>LLM-as-a-judge paradigm</i>, but there are still many open questions about the evaluation paradigm itself. We evaluate various LLMs acting as judges using human annotations on a controlled setup using the TriviaQA benchmark. With the following results, we urge caution in trusting LLMs as judges without including an evaluation of the judges themselves. <br>
-🌟 Only GPT-4 Turbo and Llama3-70B shine among all the judge models we evaluate, but their alignment with human annotations still falls short of inter-human annotator agreement.<br>
-📊 Scores assigned by judges with >80% percent human alignment can be ~20 points apart, and Cohen's kappa is a superior metric.<br>
-⚖️ Most aligned in scores != most discriminative, in some cases, judge models with low alignment such as Contains (lexical match), and JudgeLM-7B outperform better models in terms of <i>ranking</i> models, because their biases are more systematic.<br>
-🧩 Judge LLMs are often lenient and can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know".<br>
-🎯 It is not easy to steer large models, but smaller models get confused by adding too much detail.
+       Large language models are often evaluated using the <i>LLM-as-a-judge paradigm</i>, but there are still many open questions about the evaluation paradigm itself. We evaluate various LLMs acting as judges using human annotations on a controlled setup using the TriviaQA benchmark. With the following results, we urge caution in trusting LLMs as judges without including an evaluation of the judges themselves: 🌟 Only GPT-4 Turbo and Llama3-70B shine among all the judge models we evaluate, but their alignment with human annotations still falls short of inter-human annotator agreement. 📊 Scores assigned by judges with >80% percent human alignment can be ~20 points apart, and Cohen's kappa is a superior metric. ⚖️ Most aligned in scores != most discriminative, sometimes judge models with low human alignment such as JudgeLM-7B and Contains (lexical match) outperform larger and more aligned models in terms of <i>ranking</i> models, since their biases are more systematic. 🧩 Judge LLMs are often lenient and can be easily tricked by controlled responses like "Yes," "Sure," and "I don't know". 🎯 It is not easy to steer large models, but smaller models get confused by adding too much detail.
       </p>
      </td>
    </tr>
