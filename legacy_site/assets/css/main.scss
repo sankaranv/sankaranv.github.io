@@ -1,0 +1,11 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+$sidebar-bg-color: #00397a;
+$sidebar-bg-image: url("/images/sidebar.png"), linear-gradient(to bottom, #004a9e, #002856);
+$sidebar-sticky: false;
+$large-font-size: 1.2rem;
+@import "hydeout";
+

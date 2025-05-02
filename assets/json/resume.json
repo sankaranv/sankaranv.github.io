@@ -1,0 +1,191 @@
+{
+  
+  "basics": {
+    "name": "Sankaran Vaidyanathan",
+    "email": "sankaranv@cs.umass.edu",
+    "goal": "Developing principled tools grounded in causal reasoning for explaining and evaluating complex AI systems, including large language models and reinforcement learning agents.",
+    "location": {
+      "city": "Amherst",
+      "region": "MA",
+      "countryCode": "US"
+    }
+  },
+
+  "education": [
+    {
+      "institution": "University of Massachusetts Amherst",
+      "area": "Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2021-09-01",
+      "endDate": "2026-12-01"
+    },
+    {
+      "institution": "University of Massachusetts Amherst",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2024-05-01"
+    },
+    {
+      "institution": "Anna University",
+      "area": "Electrical and Electronics Engineering",
+      "studyType": "B.E.",
+      "startDate": "2013-08-01",
+      "endDate": "2017-05-01"
+    }
+  ],
+  "work": [
+    {
+      "name": "Knowledge Discovery Lab, UMass Amherst",
+      "position": "Research Assistant",
+      "startDate": "2020-05-01",
+      "summary": "Research on causal inference, AI evaluation, and mechanistic interpretability."
+    },
+    {
+      "name": "Robert Bosch Center for Data Science and AI, Indian Institute of Technology Madras",
+      "position": "Project Associate",
+      "startDate": "2017-07-01",
+      "endDate": "2019-06-01",
+      "summary": "Worked on machine learning and network science projects."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Adaptive Circuit Behavior and Generalization in Mechanistic Interpretability",
+      "publisher": "arXiv (under review)",
+      "releaseDate": "2024-11-30",
+      "url": "https://arxiv.org/abs/2411.16105"
+    },
+    {
+      "name": "Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges",
+      "publisher": "arXiv (under review)",
+      "releaseDate": "2024-06-25",
+      "url": "https://arxiv.org/abs/2406.12624"
+    },
+    {
+      "name": "Automated Discovery of Functional Actual Causes in Complex Environments",
+      "publisher": "arXiv (under review)",
+      "releaseDate": "2024-04-22",
+      "url": "https://arxiv.org/abs/2404.10883"
+    },
+    {
+      "name": "Data-driven Learning of Chaotic Dynamical Systems using Discrete-Temporal Sobolev Networks",
+      "publisher": "Neural Networks",
+      "releaseDate": "2024-05-01",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0893608024000765"
+    },
+    {
+      "name": "Hypergraph Clustering by Iteratively Reweighted Modularity Maximization",
+      "publisher": "Complex Networks and Their Applications VIII",
+      "releaseDate": "2019-01-01",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-36687-2_24"
+    },
+    {
+      "name": "A New Measure of Modularity in Hypergraphs: Theoretical Insights and Implications for Effective Clustering",
+      "publisher": "Applied Network Science",
+      "releaseDate": "2020-01-01",
+      "url": "https://link.springer.com/article/10.1007/s41109-020-00300-3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["Python", "R", "C++"]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["PyTorch", "Pyro-PPL", "Box2D", "TransformerLens", "SAELens"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["Git", "Linux", "Figma"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sequential Circuit Discovery in LLMs",
+      "summary": "AI Safety Camp",
+      "highlights": [
+        "Investigating multi-token mechanisms in LLMs that explain how specific components and features in the model influence not just the next token generated, but also tokens further ahead in the sentence generated",
+        "Extending causal mediation analysis with time-varying treatments and mediators to identify how specific model components and features affect token sequences over multiple prediction steps."
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-05-01"
+    },
+    {
+      "name": "Quantitative LLM Judges",
+      "summary": "Adobe Research",
+      "highlights": [
+        "Analyzed limitations of the LLM-as-a-Judge paradigm, where the performance of an LLM is evaluated by using another LLM to review and score its outputs.",
+        "Developed generalized linear models on pretrained LLM embeddings to produce calibrated scores with uncertainty estimates and worst-case performance guarantees."
+      ],
+      "startDate": "2025-02-01",
+      "endDate": "2025-05-01"
+    },
+    {
+      "name": "Evaluating Alignment and Vulnerabilities in LLMs-as-Judges",
+      "summary": "Meta",
+      "highlights": [
+        "Evaluated thirteen LLM judge models on scoring model outputs from a multiple-choice QA benchmark, identifying Scott's Pi as a more reliable metric for evaluating judge models.",
+        "Identified failure cases such as prompt sensitivity and revealed misalignment with human judgments in top-performing LLM judges, with competitive performance from smaller models and simple lexical metrics."
+      ],
+      "startDate": "2024-02-01",
+      "endDate": "2024-12-01"
+    },
+    {
+      "name": "Analysis and Prediction of Cognitive Load During Cardiac Surgery",
+      "summary": "National Institute of Health and Harvard Medical School",
+      "highlights": [
+        "Predicted cognitive load and stress among surgical teams during cardiac surgery using time-series models of heart rate variability (Transformer, LSTM) with MCMC-based imputation for missing sensor data.",
+        "Applied Explainable AI techniques (SHAP, feature ablation, permutation importance) to identify key heart rate variability features driving model predictions, and validated findings against clinical expert knowledge."
+      ],
+      "startDate": "2023-05-01",
+      "endDate": "2024-05-01"
+    },
+    {
+      "name": "Competence-Aware Machine Learning",
+      "summary": "DARPA Competence-Aware Machine Learning Program",
+      "highlights": [
+        "Determined the causes of failure for a pre-trained reinforcement learning agent navigating in the AirSim driving environment, by estimating causal effects of various environmental conditions on mission failure.",
+        "Built causal models for estimating the agent's competence (probability of mission success) with confidence intervals, given the environmental conditions for an upcoming route."
+      ],
+      "startDate": "2020-05-01",
+      "endDate": "2022-08-01"
+    }
+  ],
+
+  "volunteer": [
+    {
+      "organization": "UMass Ph.D. Applicant Support Program",
+      "position": "Mentor",
+      "startDate": "2025-01-01",
+      "endDate": "2025-04-01",
+      "summary": "Provided mentorship and technical guidance to teams working on interpretability in large language models."
+    },
+    {
+      "organization": "Graduate Students in Causality Reading Group",
+      "position": "Co-organizer",
+      "startDate": "2022-09-01",
+      "endDate": "2023-05-01",
+      "summary": "Co-led a reading group for PhD students to discuss foundational and applied topics in causal inference."
+    }
+  ],
+  "teaching": [
+    {
+      "name": "CS 589: Machine Learning",
+      "institution": "UMass Amherst",
+      "position": "Teaching Assistant",
+      "startDate": "2022-01-01",
+      "endDate": "2022-05-01",
+      "summary": "Led lab sessions, graded assignments, and held office hours for graduate-level machine learning course."
+    },
+    {
+      "name": "CS 689: Machine Learning Theory",
+      "institution": "UMass Amherst",
+      "position": "Teaching Assistant",
+      "startDate": "2023-01-01",
+      "endDate": "2023-05-01",
+      "summary": "Assisted in instruction and evaluation for advanced ML theory course with emphasis on kernel methods and duality."
+    }
+  ]
+}

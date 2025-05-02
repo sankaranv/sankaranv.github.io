@@ -1,0 +1,8 @@
+github_users:
+  - sankaranv
+
+repo_description_lines_max: 2
+
+github_repos:
+  - sankaranv/phyre2
+  - sankaranv/actual-cause
