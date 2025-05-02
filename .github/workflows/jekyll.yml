@@ -35,13 +35,15 @@ jobs:
       - name: Build the site
         run: JEKYLL_ENV=production bundle exec jekyll build
 
-      - name: Deploy to gh-pages
+      - name: Clone and push to gh-pages branch
         run: |
-          cd _site
-          touch .nojekyll  # disable GitHub's Jekyll processing
-          git init
-          git config user.name 'github-actions'
-          git config user.email 'github-actions@github.com'
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git clone --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+          rm -rf gh-pages/*
+          cp -r _site/* gh-pages/
+          cd gh-pages
+          touch .nojekyll
           git add .
-          git commit -m "Deploy site from master branch"
-          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:gh-pages
+          git commit -m "Update site on $(date)"
+          git push origin gh-pages
