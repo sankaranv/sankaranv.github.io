@@ -1,7 +1,7 @@
 :root {
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    --font-blog-header: 'IBM Plex Sans', sans-serif;
+    --font-blog-header: 'Inter', sans-serif;
     --font-tamil: 'Baloo Thambi 2', sans-serif;
   }
 
@@ -67,10 +67,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .post-title {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-weight: 500;
     color: var(--global-heading-color);
     letter-spacing: -0.02em;
     }
+    
 
 .post-list a.post-title {
     font-family: var(--font-display);
