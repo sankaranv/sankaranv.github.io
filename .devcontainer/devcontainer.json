@@ -1,0 +1,17 @@
+{
+    "name": "al-folio",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "jekyll",
+    "workspaceFolder": "/srv/jekyll",
+    "forwardPorts": [8080, 35729],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "rebornix.Ruby",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    },
+    "postCreateCommand": "bundle install || true"
+  }
+  
