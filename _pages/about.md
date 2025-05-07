@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <em>shun-ka-run</em>  •  /ʃʌŋkəˈɹʌn/  •  <span class='tamil'>சங்கரன்</span>
-
+subtitle: <em>shun-ka-run</em>&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;&nbsp;&nbsp;&nbsp;&nbsp;/ʃʌŋkəˈɹʌn/&nbsp;&nbsp;&nbsp;&nbsp;&#x2022;&nbsp;&nbsp;&nbsp;&nbsp;<span class='tamil'>சங்கரன்</span>
 profile:
   align: right
   image: me.jpg
