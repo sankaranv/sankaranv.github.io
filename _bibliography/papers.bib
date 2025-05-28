@@ -61,14 +61,15 @@
 
 }
 
-@article{thakur2024judging,
+@inproceedings{thakur2024judging,
   title={Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges},
   author={Thakur*, Aman Singh and Choudhary*, Kartik and Ramayapally*, Venkat Srinik and Vaidyanathan, Sankaran and Hupkes, Dieuwke},
-  journal={arXiv preprint arXiv:2406.12624},
-  year={2024},
+  booktitle={Proceedings of the Fourth Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)},
+  year={2025},
+  publisher = "Association for Computational Linguistics",
   bibtex_show={true},
   selected={true},
-  abbr={arXiv},
+  abbr={ACL GEM},
   arXiv={https://arxiv.org/abs/2406.12624},
   pdf={https://arxiv.org/pdf/2406.12624.pdf},
   google_scholar_id={UeHWp8X0CEIC},
@@ -87,4 +88,23 @@
   pdf={https://arxiv.org/pdf/2411.16105.pdf}, 
   google_scholar_id={zYLM7Y9cAGgC},
   abstract={Mechanistic interpretability aims to understand the inner workings of large neural networks by identifying circuits, or minimal subgraphs within the model that implement algorithms responsible for performing specific tasks. These circuits are typically discovered and analyzed using a narrowly defined prompt format. However, given the abilities of large language models (LLMs) to generalize across various prompt formats for the same task, it remains unclear how well these circuits generalize. For instance, it is unclear whether the models generalization results from reusing the same circuit components, the components behaving differently, or the use of entirely different components. In this paper, we investigate the generality of the indirect object identification (IOI) circuit in GPT-2 small, which is well-studied and believed to implement a simple, interpretable algorithm. We evaluate its performance on prompt variants that challenge the assumptions of this algorithm. Our findings reveal that the circuit generalizes surprisingly well, reusing all of its components and mechanisms while only adding additional input edges. Notably, the circuit generalizes even to prompt variants where the original algorithm should fail; we discover a mechanism that explains this which we term S2 Hacking. Our findings indicate that circuits within LLMs may be more flexible and general than previously recognized, underscoring the importance of studying circuit generalization to better understand the broader capabilities of these models.},
+}
+
+@article{awtry2024leveraging,
+  title={Assessing Intraoperative Cognitive Workload by Leveraging Deep Learning Networks},
+  author={Awtry, Jake and Vaidyanathan, Sankaran and Conboy, Heather M and Kennedy-Metz, Lauren and Clarke, Lori A and Avrunin, George and Dias, Roger and Jensen, David and Zenati, Marco},
+  volume = {239},
+  ISSN = {1879-1190},
+  url = {http://dx.doi.org/10.1097/XCS.0000000000001159},
+  DOI = {10.1097/xcs.0000000000001159},
+  number = {5},
+  bibtex_show={true},
+  journal = {Journal of the American College of Surgeons},
+  abbr={JACS},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+  year = {2024},
+  month = oct,
+  pages = {S71-S79},
+  google_scholar_id={Tyk-4Ss8FVUC},
+  abstract={Surgeons' cognitive workload (CWL) fluctuates in response to intraoperative events and cognitive overload may negatively impact operative performance and outcomes. We sought to use a deep neural network model to predict surgeons' CWL during coronary artery bypass grafting (CABG). The root mean square of successive differences (RMSSD), a heart rate variability metric that reflects CWL, was collected via 3-lead electrocardiogram monitors and Kubios software for surgeons during non-emergent CABG procedures (n = 26). RMSSD was predicted at 5-minute intervals throughout operation via a long short-term memory (LSTM) neural network integrating time, surgical phase, and the RMSSD of surgeons at previous timepoints. Predictions were compared with a random model, linear ridge regression, and a simple autoregressive model in which RMSSD for the surgeon at time interval t equals RMSSD at interval t-1. The LSTM, linear ridge regression, and autoregressive models all performed similarly in predicting dynamic changes in surgeon RMSSD while outperforming the random model. Correlation coefficients for measured and predicted RMSSD values for all 3 models across all cases were 0.47, 0.48, and 0.49, respectively, compared with 0.03 for the random model, and indistinguishable from one another. Shapley additive explanations (SHAP) analysis revealed that a surgeon's RMSSD at t-1 was the dominant predictor of RMSSD at time t across the range of RMSDD values. The deep LSTM model converged toward, and did not outperform, an autoregressive model, suggesting sustained trends in intraoperative surgeon CWL that would otherwise be difficult to effectively model with machine learning.}
 }
