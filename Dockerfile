@@ -31,6 +31,11 @@ RUN apt-get update -y && \
         nodejs \
         procps \
         python3-pip \
+        texlive \
+        texlive-latex-extra \
+        texlive-fonts-recommended \
+        texlive-fonts-extra \
+        latexmk \
         zlib1g-dev && \
     pip --no-cache-dir install --upgrade --break-system-packages nbconvert
 
