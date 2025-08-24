@@ -25,7 +25,7 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD candidate at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research focuses on developing principled tools grounded in causal reasoning for explaining and evaluating complex AI systems, including large language models (LLMs) and reinforcement learning agents. 
+I am a PhD candidate at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/), where I am advised by [David Jensen](https://people.cs.umass.edu/~jensen/). My research focuses on developing principled tools grounded in *causal reasoning* for explaining and evaluating complex AI systems, including large language models (LLMs) and reinforcement learning agents. 
 
 In particular, I focus on problems where *subjective human judgments* play a central role, including mechanistic interpretability in neural networks, evaluating LLM outputs, blame and responsibility attribution, and alignment with human social norms. These domains are often difficult to model using conventional statistical approaches in causality and machine learning: human judgments are shaped by implicit expectations, context-sensitive reasoning, and the tendency to highlight some causes over others based on agreed-upon social norms. 
 
