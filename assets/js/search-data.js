@@ -56,6 +56,9 @@ ninja.data = [{
           section: "News",},{id: "news-started-an-internship-at-basis-research-institute-working-with-rafal-urbaniak-and-emily-bunnapradist-on-probabilistic-actual-causality-if-you-re-in-the-boston-area-and-interested-in-causal-inference-and-mechanistic-interpretability-feel-free-to-reach-out",
           title: 'Started an internship at Basis Research Institute working with Rafal Urbaniak and Emily...',
           description: "",
+          section: "News",},{id: "news-released-interphyre-a-2d-physics-puzzle-environment-with-level-editing-full-simulator-state-access-and-intervention-capabilities-to-support-causal-analysis-and-agentic-experimentation",
+          title: 'Released Interphyre, a 2D physics puzzle environment with level editing, full simulator state...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
