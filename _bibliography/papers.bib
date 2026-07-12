@@ -60,6 +60,36 @@
   abstract={Reinforcement learning (RL) algorithms often struggle to learn policies that generalize to novel situations due to issues such as causal confusion, overfitting to irrelevant factors, and failure to isolate control of state factors. These issues stem from a common source: a failure to accurately identify and exploit state-specific causal relationships in the environment. While some prior works in RL aim to identify these relationships explicitly, they rely on informal domain-specific heuristics such as spatial and temporal proximity. Actual causality offers a principled and general framework for determining the causes of particular events. However, existing definitions of actual cause often attribute causality to a large number of events, even if many of them rarely influence the outcome. Prior work on actual causality proposes normality as a solution to this problem, but its existing implementations are challenging to scale to complex and continuous-valued RL environments. This paper introduces functional actual cause (FAC), a framework that uses context-specific independencies in the environment to restrict the set of actual causes. We additionally introduce Joint Optimization for Actual Cause Inference (JACI), an algorithm that learns from observational data to infer functional actual causes. We demonstrate empirically that FAC agrees with known results on a suite of examples from the actual causality literature, and JACI identifies actual causes with significantly higher accuracy than existing heuristic methods in a set of complex, continuous-valued environments.},
 }
 
+@article{vaidyanathan2026curse,
+      title={The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching}, 
+      author={Sankaran Vaidyanathan and David Arbour and Aaron Mueller and Scott Niekum and David Jensen},
+      journal={arXiv},
+      year={2026},
+      bibtex_show={true},
+      selected={true},
+      abbr={arXiv},
+      arXiv={2606.27510},
+      pdf={https://arxiv.org/pdf/2606.27510.pdf},
+      month = jun,
+      google_scholar_id={_FxGoFyzp5QC},
+      abstract={Activation patching is the primary tool in mechanistic interpretability. It attributes causal responsibility for a model behavior to each of its individual components by estimating its natural indirect effect (NIE). Re-deriving the activation patching estimand from causal mediation analysis, we find that the NIE does not solely capture the causal effect through the specific component. It also contains interaction effects (INT) that measure how much the component's causal effect itself depends on the state of other components in the model. A natural response may be to try to eliminate INT by adjusting the estimator or unit of analysis, but each of these potential remedies has predictable failure modes. We demonstrate these failure modes in the GPT-2 IOI circuit; components whose causal importance is conditional on the state of other components are either invisible or artificially inflated, and INT variance explains the previously documented instability of faithfulness scores. We prove that INT scales with the distance between clean and patched component activations, is negligible when the model is locally affine, and decomposes combinatorially into pairwise and higher-order group interactions. Despite its inevitability, INT is not a nuisance to be eliminated, but rather a diagnostic for interpretability studies. Its individual and group-level magnitude and sign signal when causal conclusions are prompt-dependent, and when greedy NIE-based component ranking will miss mechanisms only discoverable through combinatorial search.}
+}
+
+@article{nainani2025detectingcharacterizingplanninglanguage,
+      title={Detecting and Characterizing Planning in Language Models}, 
+      author={Jatin Nainani and Sankaran Vaidyanathan and Connor Watts and Andre N. Assis and Alice Rigg},
+      journal={NeurIPS Mechanistic Interpretability Workshop},
+      year={2025},
+      bibtex_show={true},
+      selected={true},
+      abbr={NeurIPS Mech Interp},
+      arXiv={2508.18098},
+      pdf={https://arxiv.org/pdf/2508.18098.pdf},
+      month = dec,
+      google_scholar_id={W7OEmFMy1HYC},
+      abstract={Modern large language models (LLMs) have demonstrated impressive performance across a wide range of multi-step reasoning tasks. Recent work suggests that LLMs may perform planning - selecting a future target token in advance and generating intermediate tokens that lead towards it - rather than merely improvising one token at a time. However, existing studies assume fixed planning horizons and often focus on single prompts or narrow domains. To distinguish planning from improvisation across models and tasks, we present formal and causally grounded criteria for detecting planning and operationalize them as a semi-automated annotation pipeline. We apply this pipeline to both base and instruction-tuned Gemma-2-2B models on the MBPP code generation benchmark and a poem generation task where Claude 3.5 Haiku was previously shown to plan. Our findings show that planning is not universal: unlike Haiku, Gemma-2-2B solves the same poem generation task through improvisation, and on MBPP it switches between planning and improvisation across similar tasks and even successive token predictions. We further show that instruction tuning refines existing planning behaviors in the base model rather than creating them from scratch. Together, these studies provide a reproducible and scalable foundation for mechanistic studies of planning in LLMs.}
+}
+
 @inproceedings{thakur2024judging,
   title={Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges},
   author={Thakur*, Aman Singh and Choudhary*, Kartik and Ramayapally*, Venkat Srinik and Vaidyanathan, Sankaran and Hupkes, Dieuwke},
@@ -124,36 +154,6 @@
   pdf={https://arxiv.org/pdf/2506.02945.pdf}, 
   google_scholar_id={Y0pCki6q_DkC},
   abstract={LLM-as-a-judge is a framework in which a large language model (LLM) automatically evaluates the output of another LLM. We propose quantitative LLM judges, which align evaluation scores of existing LLM judges to human scores in a given domain using regression models. The models are trained to improve the score of the original judge by using the judge's textual evaluation and score. We present four quantitative judges for different types of absolute and relative feedback, which showcases the generality and versatility of our framework. Our framework is more computationally efficient than supervised fine-tuning and can be more statistically efficient when human feedback is limited, which is expected in most applications of our work. We validate these claims empirically on four datasets using two base judges. Our experiments show that quantitative judges can effectively improve the predictive power of existing judges through post-hoc modeling.},
-}
-
-@article{nainani2025detectingcharacterizingplanninglanguage,
-      title={Detecting and Characterizing Planning in Language Models}, 
-      author={Jatin Nainani and Sankaran Vaidyanathan and Connor Watts and Andre N. Assis and Alice Rigg},
-      journal={NeurIPS Mechanistic Interpretability Workshop},
-      year={2025},
-      bibtex_show={true},
-      selected={true},
-      abbr={NeurIPS Mech Interp},
-      arXiv={2508.18098},
-      pdf={https://arxiv.org/pdf/2508.18098.pdf},
-      month = dec,
-      google_scholar_id={W7OEmFMy1HYC},
-      abstract={Modern large language models (LLMs) have demonstrated impressive performance across a wide range of multi-step reasoning tasks. Recent work suggests that LLMs may perform planning - selecting a future target token in advance and generating intermediate tokens that lead towards it - rather than merely improvising one token at a time. However, existing studies assume fixed planning horizons and often focus on single prompts or narrow domains. To distinguish planning from improvisation across models and tasks, we present formal and causally grounded criteria for detecting planning and operationalize them as a semi-automated annotation pipeline. We apply this pipeline to both base and instruction-tuned Gemma-2-2B models on the MBPP code generation benchmark and a poem generation task where Claude 3.5 Haiku was previously shown to plan. Our findings show that planning is not universal: unlike Haiku, Gemma-2-2B solves the same poem generation task through improvisation, and on MBPP it switches between planning and improvisation across similar tasks and even successive token predictions. We further show that instruction tuning refines existing planning behaviors in the base model rather than creating them from scratch. Together, these studies provide a reproducible and scalable foundation for mechanistic studies of planning in LLMs.}
-}
-
-@article{vaidyanathan2026curse,
-      title={The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching}, 
-      author={Sankaran Vaidyanathan and David Arbour and Aaron Mueller and Scott Niekum and David Jensen},
-      journal={arXiv},
-      year={2026},
-      bibtex_show={true},
-      selected={true},
-      abbr={arXiv},
-      arXiv={2606.27510},
-      pdf={https://arxiv.org/pdf/2606.27510.pdf},
-      month = jun,
-      google_scholar_id={_FxGoFyzp5QC},
-      abstract={Activation patching is the primary tool in mechanistic interpretability. It attributes causal responsibility for a model behavior to each of its individual components by estimating its natural indirect effect (NIE). Re-deriving the activation patching estimand from causal mediation analysis, we find that the NIE does not solely capture the causal effect through the specific component. It also contains interaction effects (INT) that measure how much the component's causal effect itself depends on the state of other components in the model. A natural response may be to try to eliminate INT by adjusting the estimator or unit of analysis, but each of these potential remedies has predictable failure modes. We demonstrate these failure modes in the GPT-2 IOI circuit; components whose causal importance is conditional on the state of other components are either invisible or artificially inflated, and INT variance explains the previously documented instability of faithfulness scores. We prove that INT scales with the distance between clean and patched component activations, is negligible when the model is locally affine, and decomposes combinatorially into pairwise and higher-order group interactions. Despite its inevitability, INT is not a nuisance to be eliminated, but rather a diagnostic for interpretability studies. Its individual and group-level magnitude and sign signal when causal conclusions are prompt-dependent, and when greedy NIE-based component ranking will miss mechanisms only discoverable through combinatorial search.}
 }
 
 @article{chandra2026hierarchical,
