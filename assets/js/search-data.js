@@ -53,8 +53,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-will-be-at-neurips-2025-presenting-our-work-on-detecting-and-characterizing-planning-in-language-models-at-the-mechanistic-interpretability-workshop",
           title: 'I will be at NeurIPS 2025 presenting our work on Detecting and Characterizing...',
           description: "",
-          section: "News",},{id: "news-started-an-internship-at-basis-research-institute-https-www-basis-ai-working-with-rafal-urbaniak-https-rfl-urbaniak-github-io-menu-about-html-and-emily-bunnapradist-https-www-linkedin-com-in-ebunnapradist-on-probabilistic-actual-causality-if-you-39-re-in-the-boston-area-and-interested-in-causal-inference-and-mechanistic-interpretability-feel-free-to-reach-out",
-          title: 'Started an internship at [Basis Research Institute](https://www.basis.ai/) working with [Rafal Urbaniak](https://rfl-urbaniak.github.io/menu/about.html) and [Emily...',
+          section: "News",},{id: "news-started-an-internship-at-basis-research-institute-working-with-rafal-urbaniak-and-emily-bunnapradist-on-probabilistic-actual-causality-if-you-re-in-the-boston-area-and-interested-in-causal-inference-and-mechanistic-interpretability-feel-free-to-reach-out",
+          title: 'Started an internship at Basis Research Institute working with Rafal Urbaniak and Emily...',
           description: "",
           section: "News",},{
         id: 'social-email',
