@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started an internship at [Basis Research Institute](https://www.basis.ai/) working with [Rafal Urbaniak](https://rfl-urbaniak.github.io/menu/about.html) and [Emily Bunnapradist](https://www.linkedin.com/in/ebunnapradist/) on probabilistic actual causality. If you're in the Boston area and interested in causal inference and mechanistic interpretability, feel free to reach out!
+Started an internship at [Basis Research Institute](https://www.basis.ai/) working with [Rafal Urbaniak](https://rfl-urbaniak.github.io/menu/about.html), [Emily Bunnapradist](https://www.linkedin.com/in/ebunnapradist/), and [Michelangelo Naim](https://naiimic.github.io/) on probabilistic actual causality and its applications to LLM interpretability. 
