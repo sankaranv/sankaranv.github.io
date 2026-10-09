@@ -62,6 +62,9 @@ ninja.data = [{
           section: "News",},{id: "news-released-interphyre-a-2d-physics-puzzle-environment-with-level-editing-full-simulator-state-access-and-intervention-capabilities-to-support-causal-analysis-and-agentic-experimentation",
           title: 'Released Interphyre, a 2D physics puzzle environment with level editing, full simulator state...',
           description: "",
+          section: "News",},{id: "news-the-curse-of-multiple-mediators-hidden-interaction-effects-in-activation-patching-was-accepted-as-a-spotlight-paper-at-neurips-2026-see-you-in-sydney",
+          title: 'The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching was accepted...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
