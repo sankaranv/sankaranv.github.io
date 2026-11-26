@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
@@ -56,7 +49,7 @@ ninja.data = [{
           section: "News",},{id: "news-guest-lecture-on-mechanistic-interpretability-for-compsci-690s-ai-alignment-slides-here",
           title: 'Guest lecture on mechanistic interpretability for COMPSCI 690S: AI Alignment. Slides here.',
           description: "",
-          section: "News",},{id: "news-started-an-internship-at-basis-research-institute-working-with-rafal-urbaniak-emily-bunnapradist-and-michelangelo-naim-on-probabilistic-actual-causality-and-its-applications-to-llm-interpretability",
+          section: "News",},{id: "news-started-an-internship-at-basis-research-institute-working-with-rafal-urbaniak-emily-bunnapradist-michelangelo-naim-and-daniel-waxman-on-probabilistic-actual-causality-and-its-applications-to-llm-interpretability",
           title: 'Started an internship at Basis Research Institute working with Rafal Urbaniak, Emily Bunnapradist,...',
           description: "",
           section: "News",},{id: "news-released-interphyre-a-2d-physics-puzzle-environment-with-level-editing-full-simulator-state-access-and-intervention-capabilities-to-support-causal-analysis-and-agentic-experimentation",
