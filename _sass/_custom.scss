@@ -126,17 +126,32 @@ html[data-theme="dark"] .kolam-field {
 }
 
 @media (max-width: 1199.98px) {
-  .kolam-top {
-    --fade-to: bottom;
+  body {
+    position: relative; // so the bottom band sits at the end of the page, not the first screen
+  }
+
+  .kolam-top,
+  .kolam-bottom {
     --fade-start: 25%;
     display: block;
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    height: 230px; // fades out around the end of the name on phones
+    height: 230px; // the top band fades out around the end of the name on phones
+  }
+
+  .kolam-top {
+    --fade-to: bottom;
+    top: 0;
     -webkit-mask-position: top center, 0 0;
     mask-position: top center, 0 0;
+  }
+
+  .kolam-bottom {
+    --fade-to: top;
+    bottom: 0;
+    -webkit-mask-position: bottom center, 0 0;
+    mask-position: bottom center, 0 0;
   }
 }
 
