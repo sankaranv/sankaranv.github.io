@@ -101,41 +101,70 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-// Kolam in the side margins (artwork: assets/img/kolam-tile.svg from bin/kolam.py; markup:
-// _includes/kolam.liquid). Wide screens only; neutral grey so it reads as texture, not accent.
-.ornaments {
+// Kolam (artwork: assets/img/kolam-tile.svg from bin/kolam.py; markup: _includes/kolam.liquid).
+// Neutral grey so it reads as texture, not accent. Wide screens: one field in each side margin.
+// Narrower screens: a band under the navbar that fades out by the end of the page title.
+.kolam-field {
   display: none;
+  z-index: -1; // behind the text
+  pointer-events: none;
+  background-color: var(--global-text-color);
+  opacity: 0.13;
+  -webkit-mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 var(--fade-start), transparent);
+  mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 var(--fade-start), transparent);
+  -webkit-mask-size: 132px 132px, 100% 100%;
+  mask-size: 132px 132px, 100% 100%;
+  -webkit-mask-repeat: repeat, no-repeat;
+  mask-repeat: repeat, no-repeat;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+// light lines on navy carry more contrast than dark lines on white; even them out
+html[data-theme="dark"] .kolam-field {
+  opacity: 0.11;
+}
+
+@media (max-width: 1199.98px) {
+  body {
+    position: relative; // so the bottom band sits at the end of the page, not the first screen
+  }
+
+  .kolam-top,
+  .kolam-bottom {
+    --fade-start: 25%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 230px; // the top band fades out around the end of the name on phones
+  }
+
+  .kolam-top {
+    --fade-to: bottom;
+    top: 0;
+    -webkit-mask-position: top center, 0 0;
+    mask-position: top center, 0 0;
+  }
+
+  .kolam-bottom {
+    --fade-to: top;
+    bottom: 0;
+    -webkit-mask-position: bottom center, 0 0;
+    mask-position: bottom center, 0 0;
+  }
 }
 
 @media (min-width: 1200px) {
-  .ornaments {
+  .kolam-left,
+  .kolam-right {
     --gutter: calc((100vw - #{$max-content-width}) / 2);
+    --fade-start: 45%;
     display: block;
-  }
-
-  // from the screen edge, fading out before the content column
-  .kolam-field {
     position: fixed;
     top: 0;
     bottom: 0;
     width: calc(var(--gutter) - 2rem);
-    z-index: 0;
-    pointer-events: none;
-    background-color: var(--global-text-color);
-    opacity: 0.13;
-    -webkit-mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 45%, transparent);
-    mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 45%, transparent);
-    -webkit-mask-size: 132px 132px, 100% 100%;
-    mask-size: 132px 132px, 100% 100%;
-    -webkit-mask-repeat: repeat, no-repeat;
-    mask-repeat: repeat, no-repeat;
-    -webkit-mask-composite: source-in;
-    mask-composite: intersect;
-  }
-
-  // light lines on navy carry more contrast than dark lines on white; even them out
-  html[data-theme="dark"] .kolam-field {
-    opacity: 0.11;
   }
 
   .kolam-left {
