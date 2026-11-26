@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Local preview at http://localhost:4000 with live reload.
+# One-time setup: brew install ruby imagemagick
+# Changes to _config.yml need a restart (Ctrl-C, run again).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+export PATH="$(brew --prefix ruby)/bin:$PATH"
+
+bundle config set --local path vendor/bundle >/dev/null
+bundle check >/dev/null 2>&1 || bundle install
+
+exec bundle exec jekyll serve --livereload --port 4000 "$@"

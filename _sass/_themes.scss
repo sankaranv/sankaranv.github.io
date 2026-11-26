@@ -9,9 +9,9 @@
 
   --global-bg-color: #ffffff;              /* clean white background */
   --global-text-color: #1a1a1a;
-  --global-text-color-light: #595959;
-  --global-theme-color: #0487e2;           /* vivid primary blue */
-  --global-hover-color: #09b1ec;           /* bright cyan */
+  --global-text-color-light: #767676;      /* secondary text; lightest grey with 4.5:1 on white */
+  --global-theme-color: #0463ca;           /* the one accent: last name, headings, links */
+  --global-hover-color: #2a86ea;           /* same hue, lifted */
   --global-hover-text-color: #ffffff;
   --global-code-bg-color: #eef6fc;         /* soft light blue */
   --global-footer-bg-color: #1e1e2f;
@@ -88,9 +88,9 @@ html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #0f111a;              /* deep navy backdrop */
   --global-text-color: #eeeeee;
-  --global-text-color-light: #aaaaaa;
-  --global-theme-color: #65c2f5;           /* mid blue */
-  --global-hover-color: #09b1ec;
+  --global-text-color-light: #8a8f99;
+  --global-theme-color: #65c2f5;           /* the one accent */
+  --global-hover-color: #a6dcfa;           /* same hue, lifted */
   --global-hover-text-color: #000000;
   --global-code-bg-color: #1a1b24;
   --global-footer-bg-color: #161821;

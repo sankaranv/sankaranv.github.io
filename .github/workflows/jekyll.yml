@@ -3,6 +3,8 @@ name: Build and Deploy al-folio to gh-pages
 on:
   push:
     branches: [master]
+  schedule:
+    - cron: "17 6 * * 1" # Mondays: refresh Google Scholar citation counts
   workflow_dispatch:
 
 permissions:
@@ -15,6 +17,8 @@ jobs:
     steps:
       - name: Checkout master
         uses: actions/checkout@v3
+        with:
+          ref: master
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -26,19 +30,42 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-
-      - name: Install Jupyter
-        run: pip install jupyter
-
-      - name: Build the site
-        run: JEKYLL_ENV=production bundle exec jekyll build
-
-      - name: Clone and push to gh-pages branch
+      # Scholar often blocks CI runners; on failure the committed counts stay as they are.
+      # Scheduled runs only rebuild the site when the counts changed.
+      - name: Refresh citation counts
+        id: citations
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
+          changed=false
+          if bin/update-citations; then
+            if ! git diff --quiet _data/citations.yml; then
+              git commit -m "Update citation counts" _data/citations.yml
+              git push origin master || echo "::warning::Could not push updated citation counts"
+              changed=true
+            fi
+          else
+            echo "::warning::Google Scholar blocked the request; using the committed citation counts"
+          fi
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$changed" = true ]; then
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install ImageMagick
+        if: steps.citations.outputs.build == 'true'
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Install Jupyter
+        if: steps.citations.outputs.build == 'true'
+        run: pip install jupyter
+
+      - name: Build the site
+        if: steps.citations.outputs.build == 'true'
+        run: JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Clone and push to gh-pages branch
+        if: steps.citations.outputs.build == 'true'
+        run: |
           git clone --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
           rm -rf gh-pages/*
           cp -r _site/* gh-pages/

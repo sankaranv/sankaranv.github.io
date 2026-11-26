@@ -8,10 +8,8 @@ last_name: Vaidyanathan
 
 # contact_note: >
 #   You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: > # the ">" symbol means to ignore newlines until "keywords:"
   Personal website for Sankaran Vaidyanathan.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: research, artificial intelligence, machine learning, interpretability, ai safety, explainable ai, mechanistic interpretability, causality, causal inference, portfolio, academic website, blog # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -20,7 +18,7 @@ url: https://sankaranv.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+back_to_top: false # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -287,19 +285,19 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+  sort_by: year, month
+  order: descending, descending
 
-# Display different badges withs stats for your publications
-# Customize badge behavior in _layouts/bib.liquid
+# "cited by N" link in each publication's link row (_layouts/bib.liquid).
+# Counts come from _data/citations.yml, which bin/update-citations refreshes
+# (CI runs it on every deploy and weekly; see .github/workflows/jekyll.yml).
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  google_scholar: true
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
   [
-    abbr,
+    venue,
     abstract,
     additional_info,
     altmetric,
@@ -323,12 +321,9 @@ filtered_bibtex_keywords:
     website,
   ]
 
-# Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
-more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
-
-# Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
-enable_publication_thumbnails: true
+# Authors shown per publication. Blank shows every author (no "and N more authors" toggle).
+max_author_limit:
+more_authors_animation_delay: 10 # only used when max_author_limit is set
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
@@ -389,7 +384,7 @@ enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------

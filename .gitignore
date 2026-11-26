@@ -2,3 +2,6 @@
 legacy_site/
 .DS_Store
 _site/
+.bundle/
+vendor/
+.jekyll-cache/

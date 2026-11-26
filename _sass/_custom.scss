@@ -1,106 +1,206 @@
 @import "fonts";
 
 :root {
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
-    --font-blog-header: 'Inter', sans-serif;
-    --font-navbar: 'Space Grotesk', sans-serif;
-    --font-tamil: 'Baloo Thambi 2', sans-serif;
-  }
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  --font-tamil: "Noto Sans Tamil", sans-serif;
+  // Source Sans is light at 400; the variable font allows a slightly heavier text weight.
+  // Light text on navy looks heavier than dark on white, so dark mode stays a touch lighter.
+  --body-weight: 450;
+}
+
+html[data-theme="dark"] {
+  --body-weight: 420;
+}
+
+// Text
 
 body {
-font-family: var(--font-body);
-font-weight: 400;
-color: var(--global-text-color);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: var(--body-weight);
+  line-height: 1.6;
+  color: var(--global-text-color);
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: var(--font-display);
-font-weight: 600;
-letter-spacing: -0.02em;
-color: var(--global-heading-color);
-margin-bottom: 0.5em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--global-heading-color);
+  margin-bottom: 0.5em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
     text-decoration: none;
     color: var(--global-hover-color);
+  }
 }
-
-.blog-post h1 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--global-heading-color);
-    margin-bottom: 0.5em;
-}
-
-.blog-post h2, h3, h4, h5, h6 {
-    font-family: var(--font-blog-header);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--global-theme-color);
-    margin-bottom: 0.5em;
-    }
 
 .tamil {
-    font-family: var(--font-tamil), sans-serif;
-    font-size: 1.05em;
-    letter-spacing: 0.02em;
-  }
+  font-family: var(--font-tamil);
+  font-size: 0.95em;
+}
 
-.navbar-brand .navbar-brand-regular{
-    font-family: var(--font-display);
-    color: var(--global-heading-color);
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    }
-
-.navbar-brand .navbar-brand-highlight {
-    font-family: var(--font-display);
-    color: var(--global-text-color);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    }
+// Name: first name in ink (Bootstrap's bold, 700), last name in the accent
 
 .post-title {
-    font-family: var(--font-display);
-    font-weight: 500;
-    color: var(--global-heading-color);
-    letter-spacing: -0.02em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--global-heading-color);
+  letter-spacing: -0.015em;
+}
+
+.navbar-brand .navbar-brand-highlight {
+  font-family: var(--font-display);
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
+.navbar-brand .navbar-brand-regular {
+  font-family: var(--font-display);
+  color: var(--global-heading-color);
+  font-weight: 600;
+}
+
+.navbar .nav-link {
+  font-weight: var(--body-weight);
+}
+
+// Home: news
+
+.news table {
+  th,
+  td {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  // dates: grey and a step smaller, on the baseline of the item's first line
+  th {
+    width: 1%; // shrink to the date
+    font-size: 0.9375rem;
+    font-weight: var(--body-weight);
+    font-variant-numeric: tabular-nums;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+
+  td {
+    font-weight: var(--body-weight);
+    color: var(--global-text-color);
+    vertical-align: baseline;
+  }
+}
+
+// Kolam in the side margins (artwork: assets/img/kolam-tile.svg from bin/kolam.py; markup:
+// _includes/kolam.liquid). Wide screens only; neutral grey so it reads as texture, not accent.
+.ornaments {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .ornaments {
+    --gutter: calc((100vw - #{$max-content-width}) / 2);
+    display: block;
+  }
+
+  // from the screen edge, fading out before the content column
+  .kolam-field {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: calc(var(--gutter) - 2rem);
+    z-index: 0;
+    pointer-events: none;
+    background-color: var(--global-text-color);
+    opacity: 0.13;
+    -webkit-mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 45%, transparent);
+    mask-image: url("/assets/img/kolam-tile.svg"), linear-gradient(to var(--fade-to), #000 45%, transparent);
+    -webkit-mask-size: 132px 132px, 100% 100%;
+    mask-size: 132px 132px, 100% 100%;
+    -webkit-mask-repeat: repeat, no-repeat;
+    mask-repeat: repeat, no-repeat;
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+  }
+
+  // light lines on navy carry more contrast than dark lines on white; even them out
+  html[data-theme="dark"] .kolam-field {
+    opacity: 0.11;
+  }
+
+  .kolam-left {
+    --fade-to: right;
+    left: 0;
+    -webkit-mask-position: top left, 0 0;
+    mask-position: top left, 0 0;
+  }
+
+  .kolam-right {
+    --fade-to: left;
+    right: 0;
+    -webkit-mask-position: top right, 0 0;
+    mask-position: top right, 0 0;
+  }
+}
+
+// Home on phones: name, pronunciation and a modest photo, centered
+
+@media (max-width: 575.98px) {
+  .about-header {
+    text-align: center;
+  }
+
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    width: 55%;
+    max-width: 240px;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+// Social icons
+
+.social {
+  margin-top: 2rem;
+
+  .contact-icons {
+    font-size: 1.75rem;
+
+    a {
+      margin: 0 0.35rem;
+
+      i::before {
+        color: var(--global-text-color-light);
+      }
     }
-    
+  }
+}
+
+// Blog posts: comfortable reading measure
 
 .post-list a.post-title {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--global-heading-color);
-    letter-spacing: -0.02em;
-    text-decoration: none;
-    
-    &:hover {
-        color: var(--global-hover-color);
-    }
+  font-size: 1.5rem;
+  color: var(--global-heading-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
 }
-  
-.header-bar h1 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    color: var(--global-theme-color);
-    }
 
-.header-bar h2 {
-        font-family: var(--font-display);
-        font-weight: 600;
-        color: var(--global-heading-color);
-    } 
-
-.social .contact-icons {
-    font-size: 2.75rem;
-     }
+.blog-post .post-content {
+  max-width: 68ch;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
